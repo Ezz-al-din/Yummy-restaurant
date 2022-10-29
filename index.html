@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yummy</title>
+</head>
+
+<body>
+    <div class="lodingScreen position-fixed d-flex justify-content-center align-items-center">
+        <li class="fas fa-spinner fa-spin text-white fa-5x"></li>
+    </div>
+    <!-- start navBar -->
+    <section class="sideNav position-fixed d-flex close">
+        <!-- start menue in nav -->
+        <div class="navMenue  vh-100  d-flex ps-4  flex-column justify-content-between">
+            <div class="nav-item p-2">
+                <ul class="list-unstyled  text-light">
+                    <li class="nav-ul-item mb-4" data-link="search">Search</li>
+                    <li class="nav-ul-item mb-4" data-link="categories">Categories</li>
+                    <li class="nav-ul-item mb-4" data-link="area">Area</li>
+                    <li class="nav-ul-item mb-4" data-link="ingredients">Ingredients</li>
+                    <li class="nav-ul-item mb-4" data-link="Contact Us">Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-social-item ">
+                <div class="socialLinks p-2">
+                    <i class="fa-brands fa-facebook-f pe-3"></i>
+                    <i class="fa-brands fa-twitter pe-3"></i>
+                    <i class="fa-solid fa-globe "></i>
+                </div>
+                <p class="text-muted ">
+                    Copyright Â© 2019 All Rights Reserved.
+                </p>
+            </div>
+            <i class="fa-solid fa-bowl-hot"></i>
+        </div>
+        <!-- start header in nav -->
+        <div
+            class="headerNav  d-flex flex-column justify-content-between align-items-center vh-100 py-4 px-1 bg-light">
+            <div class="navLogo text-center w-100 ">
+                <img src="images/logo.png" class="w-100" alt="smile face">
+            </div>
+            <div class="text-center pointer" id="btnToggel">
+                <i id="openNav" class="fa-solid fa-bars fa-2x "></i>
+            </div>
+            <div class="socialLinks ">
+                <i class="fa-solid fa-globe d-block mb-2 fa-1x"></i>
+                <i class="fa-solid fa-share-nodes d-block fa-1x"></i>
+            </div>
+        </div>
+    </section>
+    <!-- start search part -->
+    <section class="part search-container">
+        <div class="container w-75 ">
+            <div class="row  py-5 pt-4" id="search">
+
+            </div>
+        </div>
+    </section>
+    <!-- part to dispaly each part (search-Result,Categories,Area,Ingredients,Contact Us) -->
+    <section class="part">
+        <div class="loading-container position-relative top-50 start-50 " style="display:none;">
+            <div class="sm-loading text-white position-absolute">
+                <i class="fa fa-spinner fa-spin fa-4x"></i>
+            </div>
+        </div>
+        <div class="container w-75 py-2 mt-2 ps-4 text-center ">
+
+            <div class="row g-4 mt-2 p-2" id="rowData">
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
+<!-- 
+is-valid
+ -->

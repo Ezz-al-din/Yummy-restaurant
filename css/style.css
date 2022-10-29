@@ -1,0 +1,125 @@
+body{
+    padding: 0px;
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+}
+.lodingScreen{
+    background-color: #333;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 99999;
+}
+body{
+    background-color: black;
+    overflow: hidden;
+}
+/* start navbar */
+.sideNav{
+    z-index: 9999;
+    box-sizing: border-box;
+    transition: transform 0.9s ease;
+}
+.headerNav{
+    position: fixed;
+    left:250px;
+    width:60px;
+    background-color: #f8f6f6;
+}
+.navMenue{
+    background-color: black !important;
+    position: fixed; 
+    width:250px;
+}
+.close{
+    transform: translate(-250px);
+}
+.open{
+    transform: translate(0px);
+}
+.nav-item{
+    overflow: hidden;
+    height: 500px;
+}
+.nav-item li{
+    transition: padding-top 1s;
+    cursor: pointer;
+}
+.pointer{
+    cursor: pointer;
+}
+@media screen and (max-width:768px) {
+    .sideNav{
+        width: 80%;
+    }
+}
+/* ///////////////////////////// */
+/* start part to dispaly  every part*/
+.post{
+    position: relative;
+    overflow: hidden;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+}
+.post:hover .layer{
+    transform: translateY(-100%);
+}
+.bg-layer{
+    background-color: rgba(254,254, 254, 0.7);
+}
+
+
+/* ///////////////////////////// */
+.bg-transparnt{
+    background-color: transparent !important;
+}
+/* for area part */
+.city-color{
+    color:#9E403A;
+}
+/* for ingrediants party */
+.bowl-color{
+    color:lawngreen !important;
+}
+
+/* for contact us part */
+::-webkit-input-placeholder { /* Edge */
+    text-align: center;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    text-align: center;
+  }
+  
+  ::placeholder {
+    text-align: center;
+}
+input{
+    height: 2rem;
+}
+.form-control.is-valid, .was-validated .form-control:valid {
+    border-color: #28a745 !important;
+    padding-right: 2.25rem ;
+    background-repeat: no-repeat ;
+    background-position: center right calc(2.25rem / 4) ;
+    background-size: calc(2.25rem / 2) calc(2.25rem / 2) ;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e ") !important;
+}
+.form-control {
+    background-color: transparent !important;
+    border: none  ;
+    border-bottom: 1px solid rgba(255,255,255,.7) !important;
+    border-radius: 0 ;
+    color: #fff !important;
+    font-weight:lighter ;
+    font-weight: 800 ;
+}
+.shadow-special{
+    -webkit-box-shadow: 0 .5rem 1rem rgba(255,255,255,.1)!important;;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    0 .5rem 1rem rgba(255,255,255,.1)!important;;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         0 .5rem 1rem rgba(255,255,255,.1)!important;;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
